@@ -20,7 +20,7 @@ app.get.simple('/', function(request, response){
 	response.cookies.delete('location');
 	
 	// END response
-	response.end('hurray!');
+	response.end('diet is healthy!');
 });
 ```
 
