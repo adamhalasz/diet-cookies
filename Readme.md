@@ -19,13 +19,15 @@ app.get.simple('/', function(request, response){
 	// DELETE cookie
 	response.cookies.delete('location');
 	
+	// END response
 	response.end('hurray!');
 });
 ```
 
 ### How it works?
 - You can`GET` cookies from`request.cookies[id]`  
-- You can `SET` cookies with `response.cookies.set(id, value, options)`
+- You can `SET` or `UPDATE` cookies with `response.cookies.set(id, value, options)`
+- You can `DELETE` cookies with`response.cookies.delete(id)`  
 
 ### Options for `response.cookies.set`
 ```javascript
