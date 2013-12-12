@@ -1,5 +1,5 @@
 # Diet-Cookies 
-HTTP Cookie Manager for diet.js
+HTTP Cookie Manager for `dietjs`
 
 ### Install 
 If you have `dietjs` it's already installed.
@@ -38,4 +38,4 @@ app.get.simple('/', function(request, response){
 ```
 
 ### Dependencies
-- diet.js
+- `dietjs`
