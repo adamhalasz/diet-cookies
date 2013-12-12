@@ -24,8 +24,8 @@ app.get.simple('/', function(request, response){
 ```
 
 ### How it works?
-- You can`ge` cookies from`request.cookies[id]`  
-- You can `set` cookies with `response.cookies.set(id, value, options)`
+- You can`GET` cookies from`request.cookies[id]`  
+- You can `SET` cookies with `response.cookies.set(id, value, options)`
 
 ### Options for `response.cookies.set`
 ```javascript
