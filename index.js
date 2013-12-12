@@ -1,4 +1,3 @@
-
 // Cookie Handler Module
 module.exports = function(request, response){
 	response.cookieList = [];
@@ -69,5 +68,3 @@ module.exports = function(request, response){
 	
 	return [cookies, actions];
 }
-
-//response.cookies.set('id', 10, [300,0,0], 'httpOnly');
