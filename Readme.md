@@ -2,7 +2,7 @@
 HTTP Cookie Manager for diet.js
 
 ### Install 
-If you have diet.js it's already installed.
+If you have `dietjs` it's already installed.
 ```
 	npm install diet-cookies
 ```
@@ -24,10 +24,10 @@ app.get.simple('/', function(request, response){
 ```
 
 ### How it works?
-- You can **get** cookies from **request.cookies[*id*]**  
-- You can **set** cookies with **response.cookies.set(id, value, options)**
+- You can`ge` cookies from`request.cookies[id]`  
+- You can `set` cookies with `response.cookies.set(id, value, options)`
 
-### Options for response.cookies.set 
+### Options for `response.cookies.set`
 ```javascript
 {
 	"httpOnly": false, 	// true or false
