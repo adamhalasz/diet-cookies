@@ -24,10 +24,10 @@ app.get.simple('/', function(request, response){
 ```
 
 ### How it works?
-- You can get cookies from **request.cookies**  
+- You can get cookies from **request.cookies[*id*]**  
 - You can set cookies with **response.cookies.set(id, value, options)**
 
-### Set Options
+### Options for response.cookies.set 
 ```javascript
 {
 	"httpOnly": false, 	// true or false
