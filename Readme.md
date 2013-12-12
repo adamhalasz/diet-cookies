@@ -1,13 +1,13 @@
 # Diet-Cookies 
 HTTP Cookie Manager for diet.js
 
-## Install 
+### Install 
 If you have diet.js it's already installed.
 ```
 	npm install diet-cookies
 ```
 
-## Example usage:
+### Example usage:
 ```javascript
 app.get.simple('/', function(request, response){
 	// GET cookie
@@ -23,7 +23,7 @@ app.get.simple('/', function(request, response){
 });
 ```
 
-# Set Options:
+### Set Options:
 ```javascript
 {
 	"httpOnly": false, 	// true or false
@@ -33,6 +33,5 @@ app.get.simple('/', function(request, response){
 }
 ```
 
-## Dependencies
+### Dependencies
 - diet.js
-- 
