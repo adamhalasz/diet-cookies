@@ -7,7 +7,7 @@ If you have diet.js it's already installed.
 	npm install diet-cookies
 ```
 
-### Example usage:
+### Example usage
 ```javascript
 app.get.simple('/', function(request, response){
 	// GET cookie
@@ -23,7 +23,11 @@ app.get.simple('/', function(request, response){
 });
 ```
 
-### Set Options:
+### How it works?
+- You can get cookies from **request.cookies**  
+- You can set cookies with **response.cookies.set(id, value, options)**
+
+### Set Options
 ```javascript
 {
 	"httpOnly": false, 	// true or false
