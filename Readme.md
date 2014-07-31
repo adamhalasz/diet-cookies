@@ -19,7 +19,7 @@ app.get('/', function($){
     
     // read cookies
     console.log($.cookies.id);  // -> '1000'    
-    console.log($.cookies)      // -> { id: '1000' }
+    console.log($.cookies);      // -> { id: '1000' }
     
     // delete cookies
     $.cookies.delete('id');
