@@ -3,7 +3,7 @@ An HTTP cookie manager for diet.
 
 ## **Install**
 ```
-npm install diet
+npm install diet-cookies
 ```
 
 ## **Example Usage**
