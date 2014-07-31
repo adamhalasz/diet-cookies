@@ -1,8 +1,8 @@
 {
 	"name" : "diet-cookies",
-	"version": "v0.0.1",
-	"description": "HTTP Cookie Manager for diet.js.",
-	"keywords": ["next", "async", "async handler"],
+	"version": "v0.1.0",
+	"description": "An HTTP cookie manager for diet.",
+	"keywords": ["cookies", "cookie", "session", "httpOnly", "secure cookies", "cookie manager", "diet", "diet.js", "dietjs"],
 	"bugs" : { 
 		"url" : "http://github.com/adamhalasz/diet-cookies/issues"
 	, "email" : "mail@adamhalasz.com"
