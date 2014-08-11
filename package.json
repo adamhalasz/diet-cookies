@@ -1,6 +1,6 @@
 {
 	"name" : "diet-cookies",
-	"version": "v0.1.0",
+	"version": "v0.1.1",
 	"description": "An HTTP cookie manager for diet.",
 	"keywords": ["cookies", "cookie", "session", "httpOnly", "secure cookies", "cookie manager", "diet", "diet.js", "dietjs"],
 	"bugs" : { 

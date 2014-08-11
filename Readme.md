@@ -10,8 +10,9 @@ npm install diet-cookies
 ```js
 require('diet');
 app = new App();
+app.domain('http://localhost:8000/');
 app.plugin('diet-cookies', { alias: 'cookies' });
-app.start('http://localhost:8000/');
+app.start();
 
 app.get('/', function($){
     // set cookies
