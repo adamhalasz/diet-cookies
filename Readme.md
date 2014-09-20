@@ -8,25 +8,25 @@ npm install diet-cookies
 
 ## **Example Usage**
 ```js
-require('diet');
-app = new App();
-app.domain('http://localhost:8000/');
-app.plugin('diet-cookies', { alias: 'cookies' });
-app.start();
+var server = require('diet')
+app = new server()
+app.domain('http://localhost:8000/')
+app.plugin('diet-cookies', { alias: 'cookies' })
+app.start()
 
 app.get('/', function($){
     // set cookies
-    $.cookies.set('id', '1000');
+    $.cookies.set('id', '1000')
     
     // read cookies
-    console.log($.cookies.id);  // -> '1000'    
-    console.log($.cookies);      // -> { id: '1000' }
+    console.log($.cookies.id)  // -> '1000'    
+    console.log($.cookies)      // -> { id: '1000' }
     
     // delete cookies
-    $.cookies.delete('id');
+    $.cookies.delete('id')
     
-    $.end();
-});
+    $.end()
+})
 ```
 
 ## **Read Cookies**
@@ -40,7 +40,7 @@ $.cookies.other_cookie
 `name` and `value` is required, `options` are not.
 ```js
 // api
-$.cookies.set(name, value, options);
+$.cookies.set(name, value, options)
 ```
 ```js
 // example with defaults
@@ -56,11 +56,11 @@ $.cookies.set('id', '100', {
 ## **Delete Cookies**
 ```js
 // api
-$.cookies.delete(name);
+$.cookies.delete(name)
 ```
 ```js
 // example
-$.cookies.delete('id');
+$.cookies.delete('id')
 ```
 
 # MIT Licensed

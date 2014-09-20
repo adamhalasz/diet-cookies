@@ -66,3 +66,5 @@ Cookies.prototype.delete = function(name, options){
 module.exports.global = function($){
 	$.return(new Cookies($));
 }
+
+module.parent.return();
