@@ -8,21 +8,24 @@ npm install diet-cookies
 
 ## **Example Usage**
 ```js
+// Initialize Server
 var server = require('diet')
-app = new server()
-app.domain('http://localhost:8000/')
-app.plugin('diet-cookies', { alias: 'cookies' })
-app.start()
+var app = new server()
+app.listen(8000)
+
+// Register Cookie Header
+var cookies = require('diet-cookies')
+app.header(cookies)
 
 app.get('/', function($){
-    // set cookies
+    // Set cookies
     $.cookies.set('id', '1000')
     
-    // read cookies
+    // Read cookies
     console.log($.cookies.id)  // -> '1000'    
     console.log($.cookies)      // -> { id: '1000' }
     
-    // delete cookies
+    // Delete cookies
     $.cookies.delete('id')
     
     $.end()

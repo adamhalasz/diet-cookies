@@ -1,18 +1,30 @@
 {
-	"name" : "diet-cookies",
-	"version": "v0.1.2",
-	"description": "An HTTP cookie manager for diet.",
-	"keywords": ["cookies", "cookie", "session", "httpOnly", "secure cookies", "cookie manager", "diet", "diet.js", "dietjs"],
-	"bugs" : { 
-		"url" : "http://github.com/adamhalasz/diet-cookies/issues"
-	, "email" : "mail@adamhalasz.com"
-	},
-	"license": "MIT",
-	"author" : {
-		"name"	: "Halász Ádám",
-		"email"	: "mail@adamhalasz.com",
-		"url"	:"http://adamhalasz.com/"
-	},
-	"main" : "index.js",
-	"engines" : { "node" : ">=0.8.21" }
+  "name": "diet-cookies",
+  "version": "0.2.0",
+  "description": "An HTTP Cookie Manager for diet.",
+  "keywords": [
+    "cookies",
+    "cookie",
+    "session",
+    "httpOnly",
+    "secure cookies",
+    "cookie manager",
+    "diet",
+    "diet.js",
+    "dietjs"
+  ],
+  "bugs": {
+    "url": "http://github.com/adamhalasz/diet-cookies/issues",
+    "email": "mail@adamhalasz.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Halász Ádám",
+    "email": "mail@adamhalasz.com",
+    "url": "http://adamhalasz.com/"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8.21"
+  }
 }

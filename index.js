@@ -9,9 +9,11 @@ function Cookies($){
 		for(var i = 0; i < split_length; i++){
 			var item = split[i];
 			var cookieSplit = item.split('=');
-			var name = cookieSplit[0].trim();
-			var value = cookieSplit[1].trim();
-			this[name] = value;
+			if(cookieSplit.length){
+				var name = cookieSplit[0] ? cookieSplit[0].trim() : '';
+				var value = cookieSplit[1] ? cookieSplit[1].trim() : '' ;
+				this[name] = value;
+			}
 		}
 	}
 		
@@ -63,8 +65,7 @@ Cookies.prototype.delete = function(name, options){
 };
 
 // Cookie Handler Module
-module.exports.global = function($){
-	$.return(new Cookies($));
+module.exports = function($){
+	$.cookies = new Cookies($)
+	$.return();
 }
-
-module.parent.return();
