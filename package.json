@@ -1,6 +1,6 @@
 {
   "name": "diet-cookies",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "An HTTP Cookie Manager for diet.",
   "keywords": [
     "cookies",
@@ -13,6 +13,19 @@
     "diet.js",
     "dietjs"
   ],
+  "scripts": {
+  	"test": "mocha tests"
+  },
+  "devDependencies": {
+    "assert": "^1.4.1",
+    "diet": "^0.15.0",
+    "mocha": "^3.3.0",
+    "request": "^2.81.0",
+    "coveralls": ">=2.11.2",
+    "istanbul": "~0.3.2",
+    "mocha": "~1.21.4",
+    "mocha-lcov-reporter": "0.0.1"
+  },
   "bugs": {
     "url": "http://github.com/adamhalasz/diet-cookies/issues",
     "email": "mail@adamhalasz.com"

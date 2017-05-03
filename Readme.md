@@ -1,5 +1,10 @@
 # **diet-cookies**
-An HTTP cookie manager for diet.
+
+[![Build Status](https://travis-ci.org/adamhalasz/diet-cookies.svg?branch=master)](https://travis-ci.org/adamhalasz/diet-cookies)
+[![Coverage Status](https://coveralls.io/repos/github/adamhalasz/diet-cookies/badge.svg)](https://coveralls.io/github/adamhalasz/diet-cookies)
+[![npm](https://img.shields.io/npm/v/diet-cookies.svg)]()
+
+A very small, fast and simple HTTP Cookie Manager for the [diet.js](https://github.com/adamhalasz/diet) framework.
 
 ## **Install**
 ```
@@ -8,7 +13,7 @@ npm install diet-cookies
 
 ## **Example Usage**
 ```js
-// Initialize Server
+// Create Server Instance
 var server = require('diet')
 var app = new server()
 app.listen(8000)
@@ -17,6 +22,7 @@ app.listen(8000)
 var cookies = require('diet-cookies')
 app.header(cookies)
 
+// Register a GET route at "/"
 app.get('/', function($){
     // Set cookies
     $.cookies.set('id', '1000')
@@ -48,7 +54,7 @@ $.cookies.set(name, value, options)
 ```js
 // example with defaults
 $.cookies.set('id', '100', {
-    expire: [0,0,0],    // [days, minutes, seconds]
+    expire: [0,0,0,0,0],    // [days, hours, minutes, seconds, milliseconds]
     httpOnly: false,    // for http only managable cookies
     secure: false,      // for secure cookies
     path: '/',          // set cookies spcific to paths  
@@ -68,7 +74,7 @@ $.cookies.delete('id')
 
 # MIT Licensed
 
-Copyright (c) 2014 Halász Ádám <mail@adamhalasz.com>
+Copyright (c) 2014-2017 Halász Ádám <mail@adamhalasz.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

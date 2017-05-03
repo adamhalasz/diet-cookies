@@ -1,3 +1,4 @@
+// Cookie Object
 function Cookies($){
 	this.__proto__.header = [];
 	this.__proto__.signal = $;
@@ -29,7 +30,9 @@ Cookies.prototype.set = function(name, value, options){
 		var days 	 = options.expire[0]*1000*60*60*24;
 		var hours 	 = options.expire[1] ? options.expire[1]*1000*60*60 : 0 ;
 		var minutes  = options.expire[2] ? options.expire[2]*1000*60 : 0;
-		var future 	 = days+hours+minutes;
+		var seconds  = options.expire[3] ? options.expire[3]*1000 : 0;
+		var milliseconds  = options.expire[4] ? options.expire[4] : 0;
+		var future 	 = days+hours+minutes+seconds+milliseconds;
 		var now 	 = new Date().getTime();
 		var expires  = ' Expires='+ new Date(now+future).toGMTString()+' ';
 	} else {
@@ -63,6 +66,11 @@ Cookies.prototype.delete = function(name, options){
 	this.header.push(name+'=;'+domain+' expires=Thu, 10 Mar 1994 01:00:00 UTC; path='+path);
 	this.signal.header('set-cookie', this.header);
 };
+
+// Isset Utility
+function isset(object){
+	return (object != "undefined" && object != undefined && object != null && object != "" && typeof(object) != 'undefined') ? true : false ;
+}
 
 // Cookie Handler Module
 module.exports = function($){
